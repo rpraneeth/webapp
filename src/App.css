@@ -1,38 +1,70 @@
-.App {
+.sidenav {
+  background: wheat;
+  padding: 4px;
+  border: 3px solid #000000;
+  font-size: 25px;
+}
+.total {
+  background-color: white;
+  border: #000000;
+}
+.total th {
+  background-color: azure;
+  padding: 70px;
+  border: 1px solid #000000;
+  font-size: medium;
+}
+.total td {
+  background-color: aliceblue;
+  padding: 70px;
+  border: 1px solid #000000;
+  font-size: medium;
+  font-style: italic;
+}
+
+h2 {
   text-align: center;
+  padding: 70px;
+  border: 2.5px solid #000000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: large;
 }
 
-.App-link {
-  color: #61dafb;
+.dropdown-content nav:hover {
+  background-color: #000000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+.dropbtn {
+  background-color: #4caf50;
+  padding: 20px;
+  font-size: x-large;
+  border: none;
+  cursor: pointer;
 }
