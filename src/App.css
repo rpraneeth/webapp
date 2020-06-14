@@ -49,6 +49,8 @@ h2 {
   text-decoration: dashed;
   display: block;
   font-size: large;
+  border-style: outset;
+  border: 7px solid rgb(216, 217, 221);
 }
 
 .dropdown-content nav:hover {
@@ -60,17 +62,18 @@ h2 {
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #6bd8c9;
+  background-color: #69aa5934;
 }
 .dropbtn {
   background-color: rgb(181, 241, 102);
-  padding: 20px;
+  padding: 15px;
   font-size: x-large;
-  border: none;
+  border: 3px solid black;
+  border-radius: 5px;
   cursor: pointer;
 }
 .dropbtn a {
   color: black;
-  padding: 4.15pc;
+  padding: 4pc;
   font-size: larger;
 }
